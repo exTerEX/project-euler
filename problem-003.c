@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <stdint.h>
 
 int main() {
-    size_t n = 10, largest = 1, index = 2;
+    uint64_t n = 600851475143, prime = 1, index = 2;
 
     while (index * index <= n) {
         while (n % index == 0) {
-            largest = index;
+            prime = index;
             n /= index;
         }
 
@@ -13,10 +14,10 @@ int main() {
     }
 
     if (n > 1) {
-        largest = n;
+        prime = n;
     }
 
-    printf("%ld\n", largest);
+    printf("%ld\n", prime);
 
     return 0;
 }
