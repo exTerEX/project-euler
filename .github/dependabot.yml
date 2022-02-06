@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Europe/Oslo"
+    labels:
+      - "dependencies"
+      - "actions"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "exTerEX"
+    target-branch: "main"
