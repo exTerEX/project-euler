@@ -1,13 +1,10 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     size_t n = 10, largest = 1, index = 2;
 
-    while (index * index <= n)
-    {
-        while (n % index == 0)
-        {
+    while (index * index <= n) {
+        while (n % index == 0) {
             largest = index;
             n /= index;
         }

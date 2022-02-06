@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     size_t s1 = 0, s2 = 0, index;
 
-    for (index = 1; index <= 100; index++)
-    {
+    for (index = 1; index <= 100; index++) {
         s1 += index * index;
         s2 += index;
     }

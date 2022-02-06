@@ -1,11 +1,9 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     size_t n = 10, sum = 0, index = 1, jndex = 2, temp;
 
-    while (jndex <= n)
-    {
+    while (jndex <= n) {
         if ((jndex & 1) == 0) {
             sum += jndex;
         }
