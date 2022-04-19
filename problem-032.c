@@ -50,4 +50,3 @@ int32_t is_pandigital(int32_t m1, int32_t m2, int32_t product) {
 
     return counter[0] == 0;
 }
-
