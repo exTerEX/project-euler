@@ -9,7 +9,7 @@ void init_sieve();
 int64_t rotate(int64_t);
 int32_t is_circular(int64_t);
 
-int32_t main(void) {
+int main() {
     int32_t i, answer;
 
     init_sieve();
