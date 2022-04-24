@@ -10,7 +10,7 @@ void sort(uint8_t[][MAX_NAME_LEN], uint32_t);
 int main() {
     uint8_t names[5200][MAX_NAME_LEN];
 
-    FILE* fp = fopen("problem-022.txt", "rt");
+    FILE* fp = fopen("001-050/problem-022.txt", "rt");
 
     if (!fp) { perror("Unable to open file"); return 1; }
 

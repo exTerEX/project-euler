@@ -15,7 +15,7 @@ int main()
     char word[MAXLEN];
     int32_t answer = 0;
 
-    fp = fopen("problem-042.txt", "r");
+    fp = fopen("001-050/problem-042.txt", "r");
     while (read_word(fp, word) != EOF) {
         if (is_triangular(word_value(word))) { ++answer; }
     }

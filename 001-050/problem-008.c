@@ -5,7 +5,7 @@ size_t get_product(FILE*, size_t, size_t);
 
 int main() {
     size_t position = 0, nDigits = 4, max_product = 0;
-    FILE* fp = fopen("problem-008.txt", "rt");
+    FILE* fp = fopen("001-050/problem-008.txt", "rt");
 
     if (!fp) {
         perror("Unable to open file");
