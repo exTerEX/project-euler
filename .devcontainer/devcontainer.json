@@ -1,0 +1,19 @@
+{
+    "name": "Project-euler",
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+        "ghcr.io/exterex/devcontainer-features/cmake:latest": {
+            "version": "3.30.2"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "EditorConfig.EditorConfig",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    },
+    "postCreateCommand": "git config --global --add safe.directory /workspaces/project-euler"
+}
