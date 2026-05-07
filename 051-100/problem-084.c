@@ -43,7 +43,6 @@ static int apply_special(int sq) {
         else if (card == 6 || card == 7) dest = next_rr(sq);
         else if (card == 8) dest = next_util(sq);
         else if (card == 9) dest = (sq - 3 + SQUARES) % SQUARES;
-        /* "go back 3" from sq=36 lands on CC sq=33 */
         if (dest != sq) {
             if (dest == 2 || dest == 17 || dest == 33) return apply_special(dest);
         }

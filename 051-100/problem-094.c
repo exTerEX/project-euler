@@ -6,8 +6,6 @@
 int main() {
     int64_t total = 0;
 
-    /* Family 1: b = a-1, perimeter = 3a-1
-       Recurrence: a'=7a+4k+2, k'=12a+7k+4, starting (a,k)=(17,30) */
     int64_t a1 = 17, k1 = 30;
     while (3 * a1 - 1 <= LIMIT) {
         total += 3 * a1 - 1;
@@ -16,8 +14,6 @@ int main() {
         a1 = na; k1 = nk;
     }
 
-    /* Family 2: b = a+1, perimeter = 3a+1
-       Recurrence: a'=7a+4k-2, k'=12a+7k-4, starting (a,k)=(5,8) */
     int64_t a2 = 5, k2 = 8;
     while (3 * a2 + 1 <= LIMIT) {
         total += 3 * a2 + 1;

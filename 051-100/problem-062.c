@@ -23,7 +23,7 @@ struct permutation* insert(struct permutation** hashtab, int64_t n) {
     uint32_t hashval = hash(representation);
 
     for (struct permutation* p = hashtab[hashval]; p != NULL; p = p->next) {
-        if (strcmp(p->repr, representation) == 0) /* found */ {
+        if (strcmp(p->repr, representation) == 0) {
             p->count++;
             return p;
         }
