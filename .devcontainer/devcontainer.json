@@ -2,7 +2,7 @@
     "name": "Project-euler",
     "image": "mcr.microsoft.com/devcontainers/base:debian",
     "features": {
-        "ghcr.io/exterex/devcontainer-features/cmake:latest": {
+        "ghcr.io/andreassag/devcontainer-features/cmake:latest": {
             "version": "3.30.2"
         }
     },

@@ -12,5 +12,5 @@ updates:
       - "actions"
     open-pull-requests-limit: 5
     reviewers:
-      - "exTerEX"
+      - "andreassag"
     target-branch: "main"
